@@ -23,7 +23,7 @@ class AutoValidator:
         self.fw1 = net.get('fw1')
         self.fw2 = net.get('fw2')
 
-    # MODIFICATION ICI : Ajout du paramètre 'output'
+    
     def log(self, test_id, description, status, output="", details=""):
         res = "PASS" if status else "FAIL"
         color = self.C_GREEN if status else self.C_RED
@@ -31,14 +31,14 @@ class AutoValidator:
         if not status and details:
             print(f"    Details: {details}")
         
-        # On nettoie l'output pour le JSON (on limite la taille si c'est trop gros)
+        
         clean_output = output.strip() if output else "N/A"
         
         self.results[test_id] = {
             "description": description,
             "status": res,
             "timestamp": datetime.now().isoformat(),
-            "command_output": clean_output, # <--- PREUVE TECHNIQUE ICI
+            "command_output": clean_output, 
             "details": details
         }
 
