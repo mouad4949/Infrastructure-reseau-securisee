@@ -1,0 +1,19 @@
+server {
+    listen 80;
+    server_name 10.0.1.10;
+    # Redirection automatique vers HTTPS
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name 10.0.1.10;
+
+    ssl_certificate /home/server/web1.crt;
+    ssl_certificate_key /home/server/web1.key;
+
+    location / {
+        root /var/www/html;
+        index index.html;
+    }
+}
