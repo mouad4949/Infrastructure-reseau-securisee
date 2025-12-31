@@ -1,6 +1,6 @@
 # Mini Projet : Infrastructure Réseau Sécurisée (Zero Trust)
 
-**Réalisé par :** [RGUIBI Mohamed Mouad]  
+**Réalisé par :** [RGUIBI Mohamed Mouad] [AIT SAID AYOUB]  
 **Module :** Sécurité des systèmes informatiques (LSI3 s5)  
 **Encadrant :** Pr. Ikram BEN ABDELOUAHAB    
 ---
